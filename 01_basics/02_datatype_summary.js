@@ -9,8 +9,8 @@ const scoreValue=100.3
 const isLoggedIn =false //bool
 const outsideTemp=null //null
 let useremail; //undefined
-const id=symbol('123')
-const anotherId=symbol('123')
+const id=Symbol('123')
+const anotherId=Symbol('123')
 
 //console.log(id===anotherId); false
 
@@ -48,6 +48,26 @@ console.log(typeof myFunction) //function
        Object  =>  object */
 
 
+//stack(primitive)  ,heap(non primitive)
+//stack copy krta hai //heap hamesha reference deta
+let myYoutubename="kahsishdotcom"
+let anothername=myYoutubename
+anothername="kashu"
 
 
+console.log(myYoutubename) //kahsishdotcom
+console.log(anothername)  //kashu
 
+let userOne={
+    email:"user@google.com",
+    upi:"user@abl"
+}
+
+let userTwo= userOne
+
+userTwo.email="kas@gmail.com"
+
+console.log(userOne.email); //kas@gmail.com
+console.log(userTwo.email); //kas@gmail.com
+//same emailbecuse change original mai hota jabki 
+// stack mai copy hoti or copy mai change hota 
