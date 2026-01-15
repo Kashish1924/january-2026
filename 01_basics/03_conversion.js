@@ -24,7 +24,26 @@ console.log(booleanIsLogged)
 //""=>false
 //"kashish"=>true
 
-let someNumber=33
-let stringNumber=string(someNumber)
-console.log(stringNumber)   //33
-console.log(typeof stringNumber); //string
+// let someNumber=33
+// let stringNumber=string(someNumber)
+// console.log(stringNumber)   //33
+// console.log(typeof stringNumber); //string
+
+
+
+/*operation*/
+let value=3
+let negativeValue=-value
+console.log(negativeValue) //-3
+console.log(2+2)
+console.log(2-2)
+console.log(2*2)
+console.log(2%2)
+console.log(2/2)
+let str1="kashish"
+let str2=" kumari"
+let str3=str1+str2
+console.log(str3)
+console.log("1"+2) //12 first string then consider string
+console.log("1"+2+3) //123 first string then consider all string
+console.log(1+2+"3")//33 first number after string thats why 1+2=3 then add string
